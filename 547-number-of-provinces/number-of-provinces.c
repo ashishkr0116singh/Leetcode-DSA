@@ -1,3 +1,10 @@
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
 void dfs(int** isConnected, int isConnectedSize, int* visited, int city) {
     visited[city] = 1;
     for (int j = 0; j < isConnectedSize; j++) {
